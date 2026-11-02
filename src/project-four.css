@@ -1,0 +1,35 @@
+.automata-page .project-four{padding-top:82px;padding-bottom:82px;background:#eeede7}
+.automata-page .project-four .section-heading{margin-bottom:28px}
+.automata-page .p4-panel{display:grid;grid-template-columns:235px minmax(0,1fr);background:#fffefa;border:1px solid #e3e2da}
+.automata-page .p4-tabs{padding:14px 0;border-right:1px solid #e7e6df}
+.automata-page .p4-tabs button{display:flex;align-items:center;gap:11px;width:100%;padding:14px 17px;border:0;background:transparent;text-align:left;font-size:10px;color:#777a72;cursor:pointer}
+.automata-page .p4-tabs button span{font:9px var(--mono);color:#a6a99e}
+.automata-page .p4-tabs button.active{background:#f0f3e8;color:#41473a;border-right:2px solid #a4c658;font-weight:700}
+.automata-page .p4-tabs button.active span{color:#819d42}
+.automata-page .p4-content{min-width:0;padding:24px;animation:pt-in .18s ease-out}
+.automata-page .p4-columns{display:grid;grid-template-columns:1fr .78fr;gap:20px;align-items:start}
+.automata-page .p4-cyk-layout{grid-template-columns:1.2fr .8fr}
+.automata-page .p4-card{padding:17px;background:#f6f5ef;border:1px solid #eeede6;min-width:0}
+.automata-page .p4-eyebrow{display:block;font:8px var(--mono);letter-spacing:.55px;color:#82964e;margin:0 0 9px}
+.automata-page .p4-card h3{font:600 19px var(--display);letter-spacing:-.4px;color:#30352b;margin:4px 0 10px}
+.automata-page .p4-card p,.automata-page .p4-explain p{font-size:10px;line-height:1.72;color:#70736b;margin:8px 0}
+.automata-page .p4-card code{font:10px var(--mono);background:#e9eee0;padding:2px 4px;color:#526536}
+.automata-page .p4-card label,.automata-page .p4-explain label{display:flex;flex-direction:column;gap:6px;margin:10px 0;color:#54594d;font-size:9px;font-weight:700}
+.automata-page .p4-card input,.automata-page .p4-card select,.automata-page .p4-explain input{width:100%;box-sizing:border-box;border:1px solid #dadbd1;background:#fffefa;padding:8px 10px;color:#2d3328;font:11px var(--mono);border-radius:3px;outline-color:#9cbb59}
+.automata-page .p4-result{margin-top:10px;padding:11px 12px;font-size:9px;line-height:1.65;border-left:3px solid}
+.automata-page .p4-result.good{background:#edf4df;color:#50672c;border-color:#9cbb59}
+.automata-page .p4-result.warn{background:#f8ece9;color:#8c4e43;border-color:#c77b6e}
+.automata-page .p4-explain{min-width:0;padding:8px 4px}
+.automata-page .p4-equation{margin:10px 0;padding:12px;background:#272c24;color:#d9ebbb;font:13px/1.55 var(--mono);overflow-wrap:anywhere}
+.automata-page .p4-vector{display:grid;grid-template-columns:1fr auto;gap:8px;padding:11px 0;font-size:9px;color:#777a72}
+.automata-page .p4-vector b{font:11px var(--mono);color:#43532d}
+.automata-page .p4-cyk-table{margin-top:13px;overflow:auto;border:1px solid #e2e2d8;background:#fffefa;padding:8px}
+.automata-page .p4-cyk-table>b{display:block;font-size:9px;color:#5a604f;margin-bottom:7px}
+.automata-page .p4-cyk-row{display:flex;align-items:stretch;gap:3px;margin:3px 0;font:8px/1.35 var(--mono);white-space:nowrap}
+.automata-page .p4-cyk-row>span{display:flex;flex-direction:column;justify-content:center;min-width:37px;min-height:29px;padding:3px 4px;text-align:center;background:#f1f3ea;color:#47533a}
+.automata-page .p4-cyk-row>span:first-child{min-width:19px;background:#e4e7db;color:#7b806f}
+.automata-page .p4-cyk-row small{font:7px var(--mono);color:#8b8e83}
+.automata-page .p4-footnote{font-size:9px;line-height:1.6;color:#777a72;margin:12px 0 0}
+.automata-page .project-lab-link{display:flex;align-items:center;gap:6px;margin:7px 0 0;color:#56663a;font-size:9px;font-weight:700}
+@media(max-width:950px){.automata-page .project-grid{grid-template-columns:1fr 1fr}.automata-page .project-card:last-child{grid-column:auto}.automata-page .p4-panel{grid-template-columns:190px minmax(0,1fr)}.automata-page .p4-content{padding:18px}.automata-page .p4-columns,.automata-page .p4-cyk-layout{grid-template-columns:1fr;gap:10px}}
+@media(max-width:650px){.automata-page .project-four{padding-top:60px;padding-bottom:54px}.automata-page .p4-panel{display:block}.automata-page .p4-tabs{display:flex;overflow-x:auto;padding:0;border-right:0;border-bottom:1px solid #e7e6df}.automata-page .p4-tabs button{min-width:155px;display:block;padding:12px 10px;font-size:8px}.automata-page .p4-tabs button span{display:block;margin-bottom:5px}.automata-page .p4-tabs button.active{border-right:0;border-bottom:2px solid #a4c658}.automata-page .p4-content{padding:13px}.automata-page .p4-cyk-row>span{min-width:30px}}

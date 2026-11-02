@@ -69,8 +69,8 @@ export default function StructuresLab() {
 
   return <section className="structures-section" id="implementacje">
     <div className="section-head structures-head">
-      <div><div className="eyebrow">TRZY PROJEKTY POŁĄCZONE Z AUTOMATAMI <span className="short-rule"/></div><h2>Od aksjomatu<br/>do działającego kodu.</h2></div>
-      <p>Algebra 01 (Kleene) łączy się z regexem 01, algebra 02 (ciała Galois) z parserem 02, a algebra 03 (permutacje) z odwracalną maszyną Turinga 03.</p>
+      <div><div className="eyebrow">CZTERY PROJEKTY POŁĄCZONE Z TEORIĄ JĘZYKÓW <span className="short-rule"/></div><h2>Od aksjomatu<br/>do działającego kodu.</h2></div>
+      <p>Trzy pierwsze ścieżki łączą wskazane struktury z automatami. Projekt 04 wykorzystuje liczby pierwsze, klasy reszt Z/nZ i model wektorów w Z³ przy blokach 4, 8 i 9 teorii języków. <a href="#automat-projekt-04">Zobacz projekt 04 →</a></p>
     </div>
     <article className="types-card" id="algebra-projekt-1">
       <div className="types-intro"><span className="concept-icon lavender"><Code2 size={19}/></span><span className="concept-index">ALGEBRA 01 / ALGEBRA KLEENE'EGO</span><h3>Regexy jako struktury algebraiczne.</h3><a className="algebra-pair-link" href="#automat-projekt-01">Połącz z automatem 01 · Silnik regexu <ArrowRight size={12}/></a><p>Półpierścień opisuje sumę i konkatenację, a algebra Kleene’ego dodaje gwiazdkę. Dzięki temu wyrażenia regularne można analizować algebraicznie i tłumaczyć na automaty.</p><div className="type-pills"><span>Półpierścień</span><ArrowRight size={13}/><span>Idempotentny</span><ArrowRight size={13}/><span>Kleene</span></div></div>
