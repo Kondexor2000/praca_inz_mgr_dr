@@ -13,6 +13,10 @@ Połączone, bezbazodanowe laboratorium edukacyjne w React: struktury algebraicz
 
 Osobna sekcja strony uzupełnia częściowo pokazane bloki przedmiotu Automaty i Języki Formalne. Nie jest projektem 04 ani kolejną parą projektów. Sześć zakładek obejmuje siedem zagadnień; ε-przejścia, determinizacja i minimalizacja są zebrane w zakładce DFA / NFA.
 
+## Przewodnik dla prowadzącego
+
+Na stronie, w nagłówku laboratorium teorii obliczeń, znajduje się odnośnik **Dla prowadzącego**. Sekcja wyjaśnia, jak przechodzić między kartami projektów a symulatorami, jak poprowadzić krótką demonstrację oraz jakie są ograniczenia przykładów. Aplikacja nie zapisuje odpowiedzi ani nie prowadzi oceniania.
+
 ## Lokalnie
 
 Wymagany Node.js 22. Uruchom `npm ci`, następnie `npm run dev`. Produkcyjny build: `npm run build`.
