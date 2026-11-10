@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import './partial-topics.css';
 
 const splitSet = (value) => [...new Set(value.split(/[\s,;]+/).filter(Boolean))].sort();
@@ -177,6 +177,13 @@ const topics = [
 ];
 export default function PartialTopicsLab() {
   const [active, setActive] = useState(0); const [key, title, Component] = topics[active];
+  useEffect(() => {
+    const selectTopic = (event) => {
+      if (Number.isInteger(event.detail) && event.detail >= 0 && event.detail < topics.length) setActive(event.detail);
+    };
+    window.addEventListener('select-ajf-tab', selectTopic);
+    return () => window.removeEventListener('select-ajf-tab', selectTopic);
+  }, []);
   return <section className="partial-lab section" id="bloki-czesciowe"><div className="section-heading"><div><div className="eyebrow"><span className="section-number">AJF</span> LABORATORIUM UZUPEŁNIAJĄCE · NIE JEST PROJEKTEM 04</div><h2>Uzupełnij bloki<br/><span>Automatów i Języków.</span></h2></div><p>Ćwiczenia do tematów AJF, niezależne od czterech ścieżek projektowych powyżej. Numery 01–06 w menu oznaczają kolejność zakładek, nie oficjalne numery bloków sylabusa. Sześć zakładek obejmuje siedem zagadnień; ε-przejścia, determinizację i minimalizację pokazujemy razem w zakładce DFA / NFA.</p></div>
     <div className="partial-panel"><div className="partial-tabs" role="tablist">{topics.map(([id,label],i)=><button key={id} role="tab" aria-selected={active===i} className={active===i?'active':''} onClick={()=>setActive(i)}><span>0{i+1}</span>{label}</button>)}</div><div className="partial-content" key={key}><h3>{title}</h3><Component/></div></div>
     <p className="partial-note"><b>Zakres:</b> uzupełnienia do przedmiotu Automaty i Języki Formalne. To laboratorium tematyczne, a nie projekt 04 łączący algebrę z blokami 4, 8 i 9. Moduły są ćwiczeniami edukacyjnymi dla jawnie wskazanych modeli i przykładów; ograniczenia każdego modułu opisano przy jego wyniku.</p>

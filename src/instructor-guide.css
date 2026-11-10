@@ -19,5 +19,23 @@
 .automata-page .ig-session>a{display:flex;align-items:center;gap:7px;padding:9px 10px;background:#c4ef61;color:#25291f;text-decoration:none;font-size:9px;font-weight:700;white-space:nowrap}
 .automata-page .ig-limit{display:flex;align-items:flex-start;gap:7px;margin:12px 0 0;color:#85877e;font-size:9px;line-height:1.65}
 .automata-page .ig-limit svg{flex:none;margin-top:1px;color:#9ca77f}
+.automata-page .ig-step-map{margin-top:29px;padding-top:23px;border-top:1px solid #e1e0d8}
+.automata-page .ig-map-heading .eyebrow{color:#859b52;font:9px var(--mono);letter-spacing:.8px}
+.automata-page .ig-map-heading h3{margin:8px 0 5px;font:600 23px/1.2 var(--display);letter-spacing:-.6px;color:#282b24}
+.automata-page .ig-map-heading p{margin:0 0 14px;color:#777a71;font-size:10px;line-height:1.6}
+.automata-page .ig-map-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;align-items:start}
+.automata-page .ig-map-card{background:#fffefa;border:1px solid #e3e2da}
+.automata-page .ig-map-title{padding:13px 14px 10px;background:#f1f2eb;border-bottom:1px solid #e4e5dc}
+.automata-page .ig-map-title>span{font:8px var(--mono);letter-spacing:.6px;color:#81984e}
+.automata-page .ig-map-title h4{margin:5px 0 0;color:#2b2e27;font:600 14px/1.25 var(--display)}
+.automata-page .ig-map-card ul{list-style:none;padding:0;margin:0}
+.automata-page .ig-map-card li{padding:10px 13px;border-top:1px solid #efeee8}
+.automata-page .ig-map-card li:first-child{border-top:0}
+.automata-page .ig-map-card li>b{font:700 8px var(--mono);letter-spacing:.2px;color:#4e5444}
+.automata-page .ig-map-card li p{margin:4px 0 0;color:#72756c;font-size:9px;line-height:1.6}
+.automata-page .ig-map-card li a{display:inline-flex;align-items:center;gap:4px;margin-top:6px;color:#6c853d;font-size:8px;font-weight:700;text-decoration:none}
+.automata-page .ig-map-card li a:hover{text-decoration:underline;text-underline-offset:2px}
 @media(max-width:850px){.automata-page .ig-cards{grid-template-columns:1fr 1fr}.automata-page .ig-card:last-child{grid-column:span 2}}
+@media(max-width:850px){.automata-page .ig-map-grid{grid-template-columns:1fr 1fr}.automata-page .ig-map-card:last-child{grid-column:span 2}}
 @media(max-width:600px){.automata-page .instructor-guide{padding-top:51px;padding-bottom:48px}.automata-page .instructor-guide .section-heading h2{font-size:38px}.automata-page .ig-cards{grid-template-columns:1fr}.automata-page .ig-card:last-child{grid-column:auto}.automata-page .ig-session{grid-template-columns:28px 1fr}.automata-page .ig-session>a{grid-column:2;justify-self:start}.automata-page .ig-session p{font-size:9px}}
+@media(max-width:600px){.automata-page .ig-map-grid{grid-template-columns:1fr}.automata-page .ig-map-card:last-child{grid-column:auto}.automata-page .ig-map-heading h3{font-size:20px}}

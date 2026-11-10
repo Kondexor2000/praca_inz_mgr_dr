@@ -36,6 +36,33 @@ const areas = [
   }
 ];
 
+const projectStepMap = [
+  {
+    id: '01', title: 'Silnik wyrażeń regularnych',
+    items: [
+      ['Kroki 1–4', 'Bezpośrednio: AJF 03 · Regex i automaty', 3],
+      ['Dlaczego', 'Zakładka buduje NFA z regexu i sprawdza, czy słowo należy do opisanego języka.', 3]
+    ]
+  },
+  {
+    id: '02', title: 'Parser wyrażeń w ciele skończonym',
+    items: [
+      ['Krok 1 · lexer', 'Brak odpowiednika: zakładki 01–06 nie pokazują leksykalnego analizatora ani tokenów GF.', null],
+      ['Kroki 2–3 · gramatyka i parser', 'Częściowo: AJF 05 · CFG i stos pokazuje ideę składni i parsera, ale nie parser wyrażeń arytmetycznych ani drzewa AST.', 5],
+      ['Krok 4 · obliczenia GF', 'Brak odpowiednika w AJF 01–06; to zakres Algebry 02.', null]
+    ]
+  },
+  {
+    id: '03', title: 'Odwracalna maszyna Turinga',
+    items: [
+      ['Krok 1 · konfiguracja', 'Częściowo: AJF 06 pokazuje stan, głowicę i taśmę, ale w innej maszynie.', 6],
+      ['Krok 2 · odwracalność', 'Brak odpowiednika: AJF 06 nie bada jednoznaczności poprzednika ani bijektywności przejść.', null],
+      ['Krok 3 · skończony zbiór konfiguracji', 'Częściowo: AJF 06 ogranicza przykład do wejścia i pola pustego, ale nie sprawdza domknięcia zbioru konfiguracji.', 6],
+      ['Krok 4 · permutacje', 'Brak odpowiednika w AJF 01–06; analizę cykli i rzędu prowadzi Algebra 03.', null]
+    ]
+  }
+];
+
 export default function InstructorGuide() {
   return <section className="instructor-guide section" id="dla-prowadzacego">
     <div className="section-heading">
@@ -47,6 +74,13 @@ export default function InstructorGuide() {
       <h3>{area.title}</h3>
       <ol>{area.steps.map((step, i) => <li key={step}><span>{String(i + 1).padStart(2, '0')}</span><p>{step}</p></li>)}</ol>
     </article>)}</div>
+    <div className="ig-step-map">
+      <div className="ig-map-heading"><span className="eyebrow">MAPA DOPASOWANIA</span><h3>Które zakładki pasują do kroków projektów 01–03?</h3><p>Numery zakładek AJF 01–06 są zgodne z menu na stronie. „Częściowo” oznacza podobną ideę, ale ćwiczenie nie realizuje danego kroku wprost.</p></div>
+      <div className="ig-map-grid">{projectStepMap.map(project => <article className="ig-map-card" key={project.id}>
+        <div className="ig-map-title"><span>PROJEKT {project.id}</span><h4>{project.title}</h4></div>
+        <ul>{project.items.map(([step, description, tab]) => <li key={step}><b>{step}</b><p>{description}</p>{tab&&<a href="#bloki-czesciowe" onClick={()=>window.dispatchEvent(new CustomEvent('select-ajf-tab',{detail:tab-1}))}>Otwórz zakładkę AJF {String(tab).padStart(2,'0')} <ArrowRight size={12}/></a>}</li>)}</ul>
+      </article>)}</div>
+    </div>
     <div className="ig-session">
       <div className="ig-session-icon"><MousePointerClick size={18}/></div>
       <div><b>Proponowany przebieg krótkiej demonstracji</b><p>Najpierw pokaż kartę projektu i jej powiązanie z algebrą. Następnie uruchom jeden przykład w Projekcie 04, poproś o przewidzenie wyniku i zmień parametr, aby omówić, co się zmienia. Na koniec przejdź do laboratorium AJF, jeśli grupa chce zobaczyć sam model automatu lub gramatyki.</p></div>
