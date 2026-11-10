@@ -7,6 +7,11 @@ Połączone, bezbazodanowe laboratorium edukacyjne w React: struktury algebraicz
 - Algebra 01: półpierścienie i algebra Kleene’ego + automat 01: silnik wyrażeń regularnych.
 - Algebra 02: ciała Galois + automat 02: parser wyrażeń obliczanych w ciele skończonym.
 - Algebra 03: grupa permutacji + automat 03: odwracalna maszyna Turinga analizowana na skończonym, zamkniętym zbiorze konfiguracji.
+- Projekt 04 (przekrojowy): Algebra dla informatyków (W1, W2, U1, U2) + bloki 4, 8 i 9 Automatów i Języków Formalnych. To osobne laboratorium o lemacie regularnym, lemacie bezkontekstowym, CYK i klasach reszt.
+
+## Laboratorium uzupełniające AJF
+
+Osobna sekcja strony uzupełnia częściowo pokazane bloki przedmiotu Automaty i Języki Formalne. Nie jest projektem 04 ani kolejną parą projektów. Sześć zakładek obejmuje siedem zagadnień; ε-przejścia, determinizacja i minimalizacja są zebrane w zakładce DFA / NFA.
 
 ## Lokalnie
 
