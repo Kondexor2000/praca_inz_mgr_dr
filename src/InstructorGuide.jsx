@@ -47,18 +47,19 @@ const projectStepMap = [
   {
     id: '02', title: 'Parser wyrażeń w ciele skończonym',
     items: [
-      ['Krok 1 · lexer', 'Brak odpowiednika: zakładki 01–06 nie pokazują leksykalnego analizatora ani tokenów GF.', null],
-      ['Kroki 2–3 · gramatyka i parser', 'Częściowo: AJF 05 · CFG i stos pokazuje ideę składni i parsera, ale nie parser wyrażeń arytmetycznych ani drzewa AST.', 5],
-      ['Krok 4 · obliczenia GF', 'Brak odpowiednika w AJF 01–06; to zakres Algebry 02.', null]
+      ['Krok 1 · lexer', 'Bezpośrednio: laboratorium projektu 02 pokazuje tokeny liczb hex, nawiasów i operatorów.', 2],
+      ['Krok 2 · priorytety', 'Bezpośrednio: parser respektuje kolejność mnożenia, dodawania i nawiasów.', 2],
+      ['Krok 3 · AST', 'Bezpośrednio: podgląd pokazuje drzewo składniowe zbudowane przez parser.', 2],
+      ['Krok 4 · GF', 'Bezpośrednio: interpreter oblicza wyrażenie w GF(2⁴) lub GF(2⁸).', 2]
     ]
   },
   {
     id: '03', title: 'Odwracalna maszyna Turinga',
     items: [
-      ['Krok 1 · konfiguracja', 'Częściowo: AJF 06 pokazuje stan, głowicę i taśmę, ale w innej maszynie.', 6],
-      ['Krok 2 · odwracalność', 'Brak odpowiednika: AJF 06 nie bada jednoznaczności poprzednika ani bijektywności przejść.', null],
-      ['Krok 3 · skończony zbiór konfiguracji', 'Częściowo: AJF 06 ogranicza przykład do wejścia i pola pustego, ale nie sprawdza domknięcia zbioru konfiguracji.', 6],
-      ['Krok 4 · permutacje', 'Brak odpowiednika w AJF 01–06; analizę cykli i rzędu prowadzi Algebra 03.', null]
+      ['Krok 1 · konfiguracja', 'Bezpośrednio: laboratorium projektu 03 definiuje jawny skończony zbiór konfiguracji Cᵢ.', 3],
+      ['Krok 2 · odwracalność', 'Bezpośrednio: narzędzie liczy poprzedników i sprawdza, czy krok jest bijekcją.', 3],
+      ['Krok 3 · domknięcie', 'Bezpośrednio: waliduje, że każdy następnik należy do analizowanego zbioru konfiguracji.', 3],
+      ['Krok 4 · permutacje', 'Bezpośrednio: dla bijekcji wyznacza cykle oraz rząd permutacji.', 3]
     ]
   }
 ];
@@ -78,7 +79,7 @@ export default function InstructorGuide() {
       <div className="ig-map-heading"><span className="eyebrow">MAPA DOPASOWANIA</span><h3>Które zakładki pasują do kroków projektów 01–03?</h3><p>Numery zakładek AJF 01–06 są zgodne z menu na stronie. „Częściowo” oznacza podobną ideę, ale ćwiczenie nie realizuje danego kroku wprost.</p></div>
       <div className="ig-map-grid">{projectStepMap.map(project => <article className="ig-map-card" key={project.id}>
         <div className="ig-map-title"><span>PROJEKT {project.id}</span><h4>{project.title}</h4></div>
-        <ul>{project.items.map(([step, description, tab]) => <li key={step}><b>{step}</b><p>{description}</p>{tab&&<a href="#bloki-czesciowe" onClick={()=>window.dispatchEvent(new CustomEvent('select-ajf-tab',{detail:tab-1}))}>Otwórz zakładkę AJF {String(tab).padStart(2,'0')} <ArrowRight size={12}/></a>}</li>)}</ul>
+        <ul>{project.items.map(([step, description, tab]) => <li key={step}><b>{step}</b><p>{description}</p>{tab===2||tab===3?<a href="#laboratoria-projektowe" onClick={()=>window.dispatchEvent(new CustomEvent('select-project-lab',{detail:tab-2}))}>Otwórz laboratorium projektu {String(tab).padStart(2,'0')} <ArrowRight size={12}/></a>:tab&&<a href="#bloki-czesciowe" onClick={()=>window.dispatchEvent(new CustomEvent('select-ajf-tab',{detail:tab-1}))}>Otwórz zakładkę AJF {String(tab).padStart(2,'0')} <ArrowRight size={12}/></a>}</li>)}</ul>
       </article>)}</div>
     </div>
     <div className="ig-session">
@@ -86,6 +87,6 @@ export default function InstructorGuide() {
       <div><b>Proponowany przebieg krótkiej demonstracji</b><p>Najpierw pokaż kartę projektu i jej powiązanie z algebrą. Następnie uruchom jeden przykład w Projekcie 04, poproś o przewidzenie wyniku i zmień parametr, aby omówić, co się zmienia. Na koniec przejdź do laboratorium AJF, jeśli grupa chce zobaczyć sam model automatu lub gramatyki.</p></div>
       <a href="#projekty">Przejdź do projektów <ArrowDown size={14}/></a>
     </div>
-    <p className="ig-limit"><CircleHelp size={14}/> To bezpłatna demonstracja edukacyjna działająca w przeglądarce. Nie zapisuje odpowiedzi, nie ocenia studentów i nie zastępuje dowodu ani pełnej implementacji modelu. Ograniczenia danego przykładu są opisane przy jego wyniku.</p>
+    <p className="ig-limit"><CircleHelp size={14}/> To bezpłatna demonstracja edukacyjna działająca w przeglądarce. Nie zapisuje odpowiedzi ani nie ocenia studentów. Laboratorium projektu 03 sprawdza bijekcję na skończonym zbiorze abstrakcyjnych konfiguracji; nie weryfikuje lokalnych reguł taśmowej maszyny Turinga. Ograniczenia są opisane przy wynikach.</p>
   </section>;
 }

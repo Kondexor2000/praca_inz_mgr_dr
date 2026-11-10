@@ -9,6 +9,13 @@ Połączone, bezbazodanowe laboratorium edukacyjne w React: struktury algebraicz
 - Algebra 03: grupa permutacji + automat 03: odwracalna maszyna Turinga analizowana na skończonym, zamkniętym zbiorze konfiguracji.
 - Projekt 04 (przekrojowy): Algebra dla informatyków (W1, W2, U1, U2) + bloki 4, 8 i 9 Automatów i Języków Formalnych. To osobne laboratorium o lemacie regularnym, lemacie bezkontekstowym, CYK i klasach reszt.
 
+## Laboratoria odpowiadające projektom 02 i 03
+
+Przed laboratorium uzupełniającym AJF znajdują się dwa dodatki projektowe, które bezpośrednio realizują kroki wcześniej niepokryte zakładkami 01–06:
+
+- **Projekt 02 · Parser GF:** leksykalne tokeny, parser z priorytetami `*` i `+`, podgląd AST oraz ewaluacja w GF(2⁴) lub GF(2⁸).
+- **Projekt 03 · Przejście odwracalne:** jawna funkcja następnika na skończonym zbiorze konfiguracji, liczba poprzedników, test bijektywności oraz rozkład permutacji na cykle i jej rząd. To model na skończonym zbiorze, nie pełny walidator lokalnych reguł maszyny Turinga.
+
 ## Laboratorium uzupełniające AJF
 
 Osobna sekcja strony uzupełnia częściowo pokazane bloki przedmiotu Automaty i Języki Formalne. Nie jest projektem 04 ani kolejną parą projektów. Numery 01–06 w menu są numerami zakładek, nie oficjalną numeracją bloków sylabusa. Sześć zakładek obejmuje siedem zagadnień; ε-przejścia, determinizacja i minimalizacja są zebrane w zakładce DFA / NFA.
