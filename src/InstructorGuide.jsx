@@ -19,9 +19,9 @@ const areas = [
     label: 'ALGEBRA + BLOKI AJF 4, 8, 9',
     steps: [
       'Otwórz „Otwórz laboratorium projektu 04”, a potem wybieraj zakładki 4, 8 i 9.',
-      'Blok 4: zmień n, pierwszą p > n i d. Omów, czemu długość po pompowaniu p(d + 1) jest złożona.',
-      'Blok 8: wybierz położenie v i y i porównaj wektory liczności przed i po pompowaniu.',
-      'Blok 9: zmień słowo nad {a,b} i odczytaj tablicę CYK; obok sprawdź decyzję automatu dla reszty n mod m.'
+      'Blok 4 — „Lemat o pompowaniu dla języków regularnych i jego zastosowanie”: zmień n, pierwszą p > n i d; omów długość p(d + 1).',
+      'Blok 8 — „Lemat o pompowaniu dla języków bezkontekstowych; języki poza klasą CF”: wybierz położenie v i y, porównaj wektory liczności.',
+      'Blok 9 — „Problemy decyzyjne i algorytm CYK”: zmień słowo nad {a,b}, odczytaj tablicę; obok sprawdź automat dla reszty n mod m.'
     ]
   },
   {
@@ -29,7 +29,7 @@ const areas = [
     title: 'Laboratorium uzupełniające',
     label: 'ĆWICZENIA TEMATYCZNE',
     steps: [
-      'Przejdź do „Laboratorium AJF” i wybierz zakładkę odpowiadającą omawianemu blokowi.',
+      'Przejdź do „Laboratorium AJF” i wybierz zakładkę odpowiadającą omawianemu tematowi. Jej numer 01–06 oznacza kolejność karty, nie oficjalny numer bloku sylabusa.',
       'Edytuj słowa, zbiory lub parametry; w symulatorze automatu i maszynie Turinga uruchom obliczenie przyciskiem.',
       'W zakładce DFA/NFA prześledź ε-domknięcie, konstrukcję podzbiorów i wynik minimalizacji.'
     ]

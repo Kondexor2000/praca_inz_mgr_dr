@@ -33,3 +33,8 @@
 .automata-page .project-lab-link{display:flex;align-items:center;gap:6px;margin:7px 0 0;color:#56663a;font-size:9px;font-weight:700}
 @media(max-width:950px){.automata-page .project-grid{grid-template-columns:1fr 1fr}.automata-page .project-card:last-child{grid-column:auto}.automata-page .p4-panel{grid-template-columns:190px minmax(0,1fr)}.automata-page .p4-content{padding:18px}.automata-page .p4-columns,.automata-page .p4-cyk-layout{grid-template-columns:1fr;gap:10px}}
 @media(max-width:650px){.automata-page .project-four{padding-top:60px;padding-bottom:54px}.automata-page .p4-panel{display:block}.automata-page .p4-tabs{display:flex;overflow-x:auto;padding:0;border-right:0;border-bottom:1px solid #e7e6df}.automata-page .p4-tabs button{min-width:155px;display:block;padding:12px 10px;font-size:8px}.automata-page .p4-tabs button span{display:block;margin-bottom:5px}.automata-page .p4-tabs button.active{border-right:0;border-bottom:2px solid #a4c658}.automata-page .p4-content{padding:13px}.automata-page .p4-cyk-row>span{min-width:30px}}
+.automata-page .p4-syllabus-map{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:-13px 0 18px}
+.automata-page .p4-syllabus-map article{display:flex;flex-direction:column;gap:6px;padding:12px 14px;background:#f7f6f0;border-left:2px solid #a4c658}
+.automata-page .p4-syllabus-map b{font:9px var(--mono);letter-spacing:.5px;color:#80984c;text-transform:uppercase}
+.automata-page .p4-syllabus-map span{font-size:10px;line-height:1.55;color:#65685f}
+@media(max-width:650px){.automata-page .p4-syllabus-map{grid-template-columns:1fr;margin:0 0 14px}}

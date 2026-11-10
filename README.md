@@ -11,7 +11,9 @@ Połączone, bezbazodanowe laboratorium edukacyjne w React: struktury algebraicz
 
 ## Laboratorium uzupełniające AJF
 
-Osobna sekcja strony uzupełnia częściowo pokazane bloki przedmiotu Automaty i Języki Formalne. Nie jest projektem 04 ani kolejną parą projektów. Sześć zakładek obejmuje siedem zagadnień; ε-przejścia, determinizacja i minimalizacja są zebrane w zakładce DFA / NFA.
+Osobna sekcja strony uzupełnia częściowo pokazane bloki przedmiotu Automaty i Języki Formalne. Nie jest projektem 04 ani kolejną parą projektów. Numery 01–06 w menu są numerami zakładek, nie oficjalną numeracją bloków sylabusa. Sześć zakładek obejmuje siedem zagadnień; ε-przejścia, determinizacja i minimalizacja są zebrane w zakładce DFA / NFA.
+
+Projekt 04 odnosi się do następujących bloków AJF: 4 — lemat o pompowaniu dla języków regularnych; 8 — lemat o pompowaniu dla języków bezkontekstowych i języki poza klasą CF; 9 — problemy decyzyjne i rozstrzygalność dla języków regularnych/bezkontekstowych oraz algorytm CYK. Ich pełne opisy są pokazane przy laboratorium projektu 04 na stronie.
 
 ## Przewodnik dla prowadzącego
 
